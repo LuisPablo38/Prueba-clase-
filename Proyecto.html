@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+body{
+  background-image: url('fondo2.3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+} 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+</style>
+<head>
+<h1 style="font-size:60px; color:white; text-align:center; ">Selecciona el entretenimiento que desees </h1>
+<p>
+<div class="dropdown">
+<button class="dropbtn">Plataformas de videojuegos</button>
+<div class="dropdown-content">
+
+<a href="https://store.steampowered.com/">Steam</a>
+<a href="https://www.epicgames.com/site/es-ES/home">Epic Games</a>
+<a href="https://www.blizzard.com/es-es/">Blizzard</a>
+</div>
+</div>
+
+
+<div class="dropdown">
+<button class="dropbtn">Plataforma VolP (Voz sobre protocolo de internet)</button>
+<div class="dropdown-content">
+<a href="https://discordapp.com/">Discord</a>
+<a href="https://www.skype.com/en/">Skype</a>
+<a href="https://teamspeak.com/en/">Team Speak</a>
+<a href="https://www.viber.com/es/">Viber</a>
+
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Redes sociales de entretenimiento</button>
+<div class="dropdown-content">
+<a href="https://www.twitch.tv/">Twitch</a>
+<a href="https://www.tiktok.com/en/">tik tok</a>
+<a href="https://www.youtube.com">YouTube</a>
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Juego</button>
+<div class="dropdown-content">
+<a href="https://www.miniclip.com/games/en/">Miniclip</a>
+<a href="https://cponline.pw/">Club Penguin</a>
+<a href="https://www.juegosjuegos.com/">Juegos de juegos</a>
+<a href="http://www.friv.com/">FRIV</a>
+
+</div>
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Series</button>
+<div class="dropdown-content">
+<a href="http://www.seriesw.net/">Seriesw</a>
+<a href="https://seriesflv.org/">Seriesflv</a>
+<a href="https://www.newpct.me/pordede/">Pordede</a>
+<a href="http://ww12.seriesdanko.com/">Seriesdanko</a>
+
+</div>
+</div>
+</p>
+</head>
+
+<body>
+<h1 style="font-size:60px; color:white; text-align:center; ">Te Presentamos lo nuevo de los videojuegos</h1>
+<p>
+<div style="background-color:white;color:blue;padding:20px;">
+  <h2>Valorant</h2>
+  <p>Riot Games presenta una nueva arena competitiva en la que podrás demostrar tu habilidad. Un juego de disparos táctico 5v5 con personajes poderosos donde la creatividad será tu mejor arma. Le presentamos un video de los que "Valorant". A jugar!!!</p>
+</div>
+
+<p>
+<div style="text-align:center"> 
+  <button onclick="playPause1()">Play/Pause</button> 
+  <button onclick="makeBig1()">Big</button>
+  <button onclick="makeSmall1()">Small</button>
+  <button onclick="makeNormal1()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">  
+    <source src="Valorant.mp4" type="video/mp4">   
+    <source src="mov_bbb.ogg" type="video/ogg">
+
+ </video>
+</div> 
+
+<script> 
+var myVideo1 = document.getElementById("video1");
+
+function playPause1() { 
+  if (myVideo1.paused) 
+    myVideo1.play(); 
+  else 
+    myVideo1.pause(); 
+} 
+
+function makeBig1() { 
+    myVideo1.width = 560; 
+} 
+
+function makeSmall1() { 
+    myVideo1.width = 320; 
+} 
+
+function makeNormal1() { 
+    myVideo1.width = 420; 
+} 
+</script> 
+</P>
+<p>
+<h1 style="font-size:60px; color:white; text-align:center; ">La serie que muchos esperaban</h1>
+</p> 
+<p>
+<div style="background-color:white;color:red;padding:20px;">
+<h3>Casa de Papel (Money Heist)</h3>
+  <p>Es una serie de televisión española creada por Álex Pina y producida por Atresmedia en colaboración con Vancouver Media para su emisión en Antena 3, y posteriormente en Netflix.Se estrenó el 2 de mayo de 2017, en la cadena española Antena 3, que distribuyó las dos primeras partes de la serie en España, antes de que Netflix la adquiriera a finales de 2017, quien la editó y reeditó, lanzó las dos partes en todo el mundo.
+
+El 19 de julio de 2019 se estrenó su tercera parte en Netflix siendo el preestreno en las playas de Málaga el día anterior.El 3 de abril de 2020 se estrenó la cuarta parte.</p>
+<p> Se ha estrenado la cuarta temporada de la serie "La casa de Papel" puedes verla en las paginas de series que colocamos en el menu. </p>
+</p>
+</div>
+
+<p>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video2" width="420">  
+    <source src="CasadePapel.mp4" type="video/mp4">   
+    <source src="mov_bbb.ogg" type="video/ogg">
+
+ </video>
+</div> 
+
+<script> 
+var myVideo2 = document.getElementById("video2");
+
+function playPause() { 
+  if (myVideo2.paused) 
+    myVideo2.play(); 
+  else 
+    myVideo2.pause(); 
+} 
+
+function makeBig() { 
+    myVideo2.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo2.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo2.width = 420; 
+} 
+</script> 
+</P>
+
+
+<h1 style="font-size:60px; color:white; text-align:center; ">En internet puede encontrar plataformas de juegos que te quitaran el aburrimiento</h1>
+<p>
+<div class="cities">
+<h2>Miniclip</h2>
+<p>Es una empresa suiza ganadora de los Premios Webby, conocida por sus juegos en línea. </p>
+<a href="https://www.miniclip.com/games/en/">Visita su pagina dando clic aqui y diviertete</a>
+</div> 
+
+<div class="cities">
+<h2>FRIV</h2>
+<p>Juega juegos en línea en el sitio de juegos friv con toda la familia. Solo los mejores juegos friv en línea </p>
+<a href="https://www.friv.com/">Visita su pagina dando clic aqui y diviertete</a>
+</div>
+
+<div class="cities">
+<h2>Club Penguin</h2>
+<p>un videojuego multijugador en línea implicando un mundo virtual que contenía una gran variedad de juegos y actividades, desarrollado por Club Penguin Entertainment (New Horizon Interactive). </p>
+<a href="https://cponline.pw/es/">Visita su pagina dando clic aqui y diviertete</a>
+</div>
+</p>
+
+<p>
+
+<h1 style="font-size:60px; color:white; text-align:center; ">Hay diferentes plataformas donde gamers e influencers te entreteneran </h1>
+<strong><h1 style="font-size:60px; color:white;">Twitch</strong></h1>
+<img src="Twitch.jpg"   style="width:350px;height:200px; float:right;">
+<div style="background-color:purple;color:white;padding:20px;">
+<p>Es una plataforma que ofrece un servicio de Streaming de video en vivo propiedad de Amazon, Inc., siendo una de sus principales funciones la retransmisión de videojuegos en directo.el sitio principalmente se enfoca a los videojuegos, incluyendo "playthroughs" de juegos jugados por usuarios, transmisión de eSports, y otros eventos relacionados con los videojuegos. El contenido del sitio puede ser visto en vivo o bajo demanda. </p>
+</div>
+</p>
+
+<p>
+<strong><h1 style="font-size:60px; color:white;">YouTube</strong></h1>
+<img src="youtube.jpg"  style="width:400px;height:200px; float:right;">
+<div style="background-color:red;color:white;padding:20px;">
+<p> Es un sitio web de origen estadounidense dedicado a compartir videos. Presenta una variedad de clips de películas, programas de televisión y vídeos musicales, así como contenidos amateur como videoblogs y YouTube Gaming. </p>
+ </div>
+</p> 
+
+<img src="chistoso.gif" alt="HTML5 Icon" style="width:300px;height:200px; float:center;">
+
+</body>
+</html>
+
+
+
+
